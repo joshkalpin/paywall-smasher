@@ -8,7 +8,7 @@ var paywallSmasher = {
 
     getCorrectSmasher: function() {
         href = window.location.href.toString();
-        if(href.contains('nationalpost')) {
+        if(href.contains('nationalpost') || href.contains('financialpost')) {
             return this.smashNationalPost;
         } else if(href.contains('thestar')) {
             return this.smashTorontoStar;
@@ -52,7 +52,6 @@ var paywallSmasher = {
                 getElementByXpath('/html/body/div[5]').remove();
             }
         }, 0);
-
     },
 };
 

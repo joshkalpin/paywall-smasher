@@ -6,9 +6,10 @@
     "version": "1.0",
 
     "permissions": [
-        "http://news.nationalpost.com/*",
+        "http://*.nationalpost.com/*",
         "http://www.thestar.com/*",
-        "http://www.theonion.com/*"
+        "http://www.theonion.com/*",
+        "http://*.financialpost.com/*"
     ],
 
     "content_scripts": [
@@ -16,7 +17,8 @@
             "matches": [
                 "http://*.nationalpost.com/*",
                 "http://www.thestar.com/*",
-                "http://www.theonion.com/*"
+                "http://www.theonion.com/*",
+                "http://*.financialpost.com/*"
             ],
             "js": ["jquery-2.0.3.min.js", "del.js"],
             "all_frames": true

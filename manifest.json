@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "Paywall Smasher",
-    "description": "This extensions defeats paywalls on many news websites",
+    "description": "This extension defeats paywalls on many news websites",
     "version": "1.0",
 
     "permissions": [
